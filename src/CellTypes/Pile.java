@@ -6,9 +6,9 @@ public class Pile {
     private int coins = 0;
 
     public Pile (int row, int column,int coins){
-        this.coins = coins;
         this.row = row;
         this.column = column;
+        this.coins = coins;
     }
 
     public boolean getCoin(){
@@ -18,6 +18,14 @@ public class Pile {
         }else {
             System.out.println("Ya no hay monedas en la pila.");
             return false;
+        }
+    }
+
+    public String toString() {
+        if (coins == 0){
+            return " ";
+        } else {
+            return Integer.toString(coins);
         }
     }
 }
