@@ -81,7 +81,6 @@ public class Main {
                            default:
                                map.getCell(robot.getRow(),robot.getColumn()).setName(robot.toString().charAt(0));
                                robot.MOVE();
-                               System.out.println("entro");
                                map.getCell(robot.getRow(),robot.getColumn()).setName(robot.toString().charAt(0));
                                break;
                        }
